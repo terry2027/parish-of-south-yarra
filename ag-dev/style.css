@@ -306,11 +306,12 @@ a:focus-visible, button:focus-visible {
   position: relative;
 }
 
+
 .logo-crest-img {
-  width: 1024px;
-  height: 341px;
+  height: 65px;
+  width: auto;
   transition: var(--transition-smooth);
-}
+} 
 
 .logo-container:hover .logo-crest-img {
   transform: scale(1.08) rotate(3deg);
@@ -1248,10 +1249,17 @@ a:focus-visible, button:focus-visible {
   }
   
   .logo-container {
+    height: 65px;
     width: auto;
-    position: absolute;
+    
+    /* Ensures the SVG scales sharply and retains its proportions */
+    object-fit: contain; 
+    display: block;
+    transition: var(--transition-smooth);
+
+    /* position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); */
   }
   
   .nav-menu {
