@@ -236,10 +236,12 @@ a:focus-visible, button:focus-visible {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0.75rem 2rem;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
+  gap: 2rem;
 }
 
 /* Left and Right Nav Lists */
@@ -298,6 +300,7 @@ a:focus-visible, button:focus-visible {
 /* Central Branding Logo Area */
 .logo-container {
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -308,8 +311,10 @@ a:focus-visible, button:focus-visible {
 
 
 .logo-crest-img {
-  height: 65px;
+  height: 48px;
   width: auto;
+  object-fit: contain;
+  display: block;
   transition: var(--transition-smooth);
 } 
 
@@ -1309,9 +1314,17 @@ a:focus-visible, button:focus-visible {
   }
   
   .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    flex-wrap: flex;
     font-size: 1rem;
-    display: block;
-    width: 100%;
+    /* display: block;
+    width: 100%; */
   }
   
   /* Hero Split Columns Stack */
