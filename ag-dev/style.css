@@ -8,26 +8,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 
 /* Brand Design Tokens (CSS Variables) */
+
 :root {
   /* Colors */
-  --bg-cream: #FDFBF7;
-  --bg-white: #FFFFFF;
-  --text-slate: #1E2229;
-  --text-muted: #535C6A;
+  --bg-cream: #F8F9FA;        /* Updated to Off-White for generous whitespace sections */
+  --bg-white: #FFFFFF;        /* Clean White background */
+  --text-slate: #333333;      /* Updated to Dark Charcoal for body text contrast */
+  --text-muted: #555555;      /* Adjusted for high contrast and accessibility */
   
-  --primary-burgundy: #8B263E;
-  --primary-dark: #5C1929;
-  --primary-light: #A8324D;
-  --primary-rgb: 139, 38, 62;
+  /* Primary Brand Color: Archdiocese Navy */
+  --primary-burgundy: #003366; 
+  --primary-dark: #002244;     
+  --primary-light: #004488;    
+  --primary-rgb: 0, 51, 102;
   
+  /* Accent Color: Liturgical Gold */
   --accent-gold: #D4AF37;
   --accent-gold-dark: #AA8B2C;
   --accent-gold-light: #F3E5AB;
   --accent-gold-rgb: 212, 175, 55;
   
   --border-light: #EBE6DD;
-  --card-shadow: 0 10px 30px rgba(30, 34, 41, 0.05);
-  --card-shadow-hover: 0 20px 40px rgba(139, 38, 62, 0.08);
+  --card-shadow: 0 10px 30px rgba(51, 51, 51, 0.05);
+  --card-shadow-hover: 0 20px 40px rgba(0, 51, 102, 0.08);
   
   /* Fonts */
   --font-headings: 'Playfair Display', Georgia, serif;

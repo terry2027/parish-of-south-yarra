@@ -1,623 +1,1301 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parish of South Yarra — Catholic Parishes of St Joseph & St Thomas Aquinas</title>
-  
-  <!-- SEO & Meta Tags -->
-  <meta name="description" content="Official website of the Parish of South Yarra, served by the Augustinians (OSA). Join us for Mass at St Joseph's (South Yarra), St Thomas Aquinas (South Yarra), and the Korean Catholic Ministry. All are welcome.">
-  <meta property="og:title" content="Parish of South Yarra — St Joseph & St Thomas Aquinas">
-  <meta property="og:description" content="Welcome to the Catholic Parish of South Yarra, Melbourne. Served by the Augustinians. Safeguarding committed, rich parish life, ministries, and community services.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://parishofsouthyarra.org.au/">
-  
-  <!-- Favicon Mock -->
-  <link rel="icon" href="crest.svg" type="image/svg+xml">
-  
-  <!-- CSS Stylesheet -->
-  <link rel="stylesheet" href="style.css">
-  
-  <!-- FontAwesome for Premium Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Parish of South Yarra — Catholic Parishes of St Joseph & St Thomas Aquinas
+    </title>
 
-  <!-- ==========================================================================
+    <!-- SEO & Meta Tags -->
+    <meta
+      name="description"
+      content="Official website of the Parish of South Yarra, served by the Augustinians (OSA). Join us for Mass at St Joseph's (South Yarra), St Thomas Aquinas (South Yarra), and the Korean Catholic Ministry. All are welcome."
+    />
+    <meta
+      property="og:title"
+      content="Parish of South Yarra — St Joseph & St Thomas Aquinas"
+    />
+    <meta
+      property="og:description"
+      content="Welcome to the Catholic Parish of South Yarra, Melbourne. Served by the Augustinians. Safeguarding committed, rich parish life, ministries, and community services."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://parishofsouthyarra.org.au/" />
+
+    <!-- Favicon Mock -->
+    <link rel="icon" href="crest.svg" type="image/svg+xml" />
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FontAwesome for Premium Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ==========================================================================
        TOP UTILITY BAR
        ========================================================================== */ -->
-  <div class="top-utility-bar" id="utility-bar">
-    <div class="left-utils">
-      <span class="social-links">
-        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      </span>
-      <a href="tel:0398269076" class="phone-link"><i class="fas fa-phone-alt"></i> (03) 9826 9076</a>
-      <a href="mailto:southyarra@cam.org.au" class="email-link"><i class="fas fa-envelope"></i> southyarra@cam.org.au</a>
+    <div class="top-utility-bar" id="utility-bar">
+      <div class="left-utils">
+        <span class="social-links">
+          <a href="#" aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </span>
+        <a href="tel:0398269076" class="phone-link"
+          ><i class="fas fa-phone-alt"></i> (03) 9826 9076</a
+        >
+        <a href="mailto:southyarra@cam.org.au" class="email-link"
+          ><i class="fas fa-envelope"></i> southyarra@cam.org.au</a
+        >
+      </div>
+      <div class="right-utils">
+        <a
+          href="#"
+          id="toggle-giving-btn"
+          style="font-weight: 700; color: var(--accent-gold)"
+          ><i class="fas fa-heart"></i> Thanksgiving / Online Giving</a
+        >
+        <button
+          class="lang-switcher"
+          id="lang-switch-btn"
+          aria-label="Switch Language"
+        >
+          <i class="fas fa-globe"></i> <span>한국어</span>
+        </button>
+      </div>
     </div>
-    <div class="right-utils">
-      <a href="#" id="toggle-giving-btn" style="font-weight: 700; color: var(--accent-gold);"><i class="fas fa-heart"></i> Thanksgiving / Online Giving</a>
-      <button class="lang-switcher" id="lang-switch-btn" aria-label="Switch Language">
-        <i class="fas fa-globe"></i> <span>한국어</span>
-      </button>
-    </div>
-  </div>
 
-  <!-- ==========================================================================
+    <!-- ==========================================================================
        SITE HEADER & SYMMETRICAL NAVBAR (ST DECLAN'S INSPIRED)
        ========================================================================== */ -->
-  <header class="site-header" id="header">
-    <nav class="main-navbar" aria-label="Main Navigation">
-      <!-- Left side of navigation (Desktop) -->
-      <ul class="nav-menu left-menu" id="left-menu-list">
-        <li class="nav-item"><a href="#" class="nav-link" onclick="openModal('about-modal')">Our Parish</a></li>
-        <li class="nav-item"><a href="#" class="nav-link" onclick="openModal('sacraments-modal')">Sacraments</a></li>
-        <li class="nav-item"><a href="#" class="nav-link" onclick="openModal('ministries-modal')">Ministries</a></li>
-      </ul>
+    <header class="site-header" id="header">
+      <nav class="main-navbar" aria-label="Main Navigation">
+        <!-- Left side of navigation (Desktop) -->
+        <ul class="nav-menu left-menu" id="left-menu-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link" onclick="openModal('about-modal')"
+              >Our Parish</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" onclick="openModal('sacraments-modal')"
+              >Sacraments</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" onclick="openModal('ministries-modal')"
+              >Ministries</a
+            >
+          </li>
+        </ul>
 
-      <!-- Central Branding (Logo & Title) -->
-      <a href="index.html" class="logo-container" aria-label="Parish of South Yarra Home">
-        <img src="crest.svg" alt="Augustinian Crest" class="logo-crest-img">
-        <span class="logo-title">South Yarra</span>
-        <span class="logo-subtitle">Catholic Parish</span>
-      </a>
+        <!-- Central Branding (Logo & Title) -->
+        <a
+          href="index.html"
+          class="logo-container"
+          aria-label="Parish of South Yarra Home"
+        >
+          <img src="crest.svg" alt="Augustinian Crest" class="logo-crest-img" />
+          <span class="logo-title">South Yarra</span>
+          <span class="logo-subtitle">Catholic Parish</span>
+        </a>
 
-      <!-- Right side of navigation (Desktop) -->
-      <ul class="nav-menu right-menu" id="right-menu-list">
-        <li class="nav-item"><a href="#" class="nav-link" onclick="openModal('safeguarding-modal')">Safeguarding</a></li>
-        <li class="nav-item"><a href="#" class="nav-link" onclick="openModal('bookings-modal')">Bookings</a></li>
-        <li class="nav-item"><a href="#" class="nav-link" onclick="openModal('contact-modal')">Contact Us</a></li>
-      </ul>
+        <!-- Right side of navigation (Desktop) -->
+        <ul class="nav-menu right-menu" id="right-menu-list">
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link"
+              onclick="openModal('safeguarding-modal')"
+              >Safeguarding</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" onclick="openModal('bookings-modal')"
+              >Bookings</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" onclick="openModal('contact-modal')"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
 
-      <!-- Mobile Hamburger Toggle -->
-      <button class="mobile-nav-toggle" id="mobile-toggle-btn" aria-expanded="false" aria-label="Toggle mobile menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </nav>
-  </header>
+        <!-- Mobile Hamburger Toggle -->
+        <button
+          class="mobile-nav-toggle"
+          id="mobile-toggle-btn"
+          aria-expanded="false"
+          aria-label="Toggle mobile menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
 
-  <main>
-    <!-- ==========================================================================
+    <main>
+      <!-- ==========================================================================
          SPLIT-HERO SECTION (ST JOSEPH'S SUBIACO INSPIRED)
          ========================================================================== */ -->
-    <section class="hero-section" id="hero">
-      <!-- Left: Visual Background & Welcome Tagline -->
-      <div class="hero-media-wrapper">
-        <div class="hero-bg-image" id="hero-media-bg"></div>
-        <div class="hero-text-content">
-          <span class="hero-tagline" id="hero-welcome-tag">Welcoming You in Communion & Faith</span>
-          <h1 class="hero-title" id="hero-welcome-title">Parish of South Yarra</h1>
-          <p class="hero-desc" id="hero-welcome-desc">Served by the Augustinians (OSA), our community spans the historical churches of St Joseph's and St Thomas Aquinas, alongside our Korean Catholic Ministry Melbourne chaplaincy.</p>
-          <div class="hero-ctas">
-            <button class="btn btn-gold" onclick="openModal('about-modal')">New to our Parish?</button>
-            <button class="btn btn-secondary" style="color: white; border-color: white;" onclick="openModal('contact-modal')">Get in Touch</button>
+      <section class="hero-section" id="hero">
+        <!-- Left: Visual Background & Welcome Tagline -->
+        <div class="hero-media-wrapper">
+          <div class="hero-bg-image" id="hero-media-bg"></div>
+          <div class="hero-text-content">
+            <span class="hero-tagline" id="hero-welcome-tag"
+              >Welcoming You in Communion & Faith</span
+            >
+            <h1 class="hero-title" id="hero-welcome-title">
+              Parish of South Yarra
+            </h1>
+            <p class="hero-desc" id="hero-welcome-desc">
+              Served by the Augustinians (OSA), our community spans the
+              historical churches of St Joseph's and St Thomas Aquinas,
+              alongside our Korean Catholic Ministry Melbourne chaplaincy.
+            </p>
+            <div class="hero-ctas">
+              <button class="btn btn-gold" onclick="openModal('about-modal')">
+                New to our Parish?
+              </button>
+              <button
+                class="btn btn-secondary"
+                style="color: white; border-color: white"
+                onclick="openModal('contact-modal')"
+              >
+                Get in Touch
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Right: Glassmorphic Mass Times Card -->
-      <div class="hero-schedule-wrapper">
-        <div class="schedule-card" id="schedule-quick-panel">
-          <div class="schedule-card-header">
-            <h3>Mass Times</h3>
-          </div>
-          
-          <div class="schedule-card-tabs">
-            <button class="schedule-tab-btn active" onclick="switchScheduleTab('st-joseph')" id="tab-st-joseph">St Joseph's</button>
-            <button class="schedule-tab-btn" onclick="switchScheduleTab('st-thomas')" id="tab-st-thomas">St Thomas Aquinas</button>
-            <button class="schedule-tab-btn" onclick="switchScheduleTab('st-korean')" id="tab-st-korean">Korean Min</button>
-          </div>
+        <!-- Right: Glassmorphic Mass Times Card -->
+        <div class="hero-schedule-wrapper">
+          <div class="schedule-card" id="schedule-quick-panel">
+            <div class="schedule-card-header">
+              <h3>Mass Times</h3>
+            </div>
 
-          <!-- St Joseph's Schedule -->
-          <div class="schedule-group active" id="schedule-st-joseph">
-            <div class="schedule-item">
-              <div class="schedule-item-title">Saturday Vigil</div>
-              <div class="schedule-item-detail">6:00 PM</div>
+            <div class="schedule-card-tabs">
+              <button
+                class="schedule-tab-btn active"
+                onclick="switchScheduleTab('st-joseph')"
+                id="tab-st-joseph"
+              >
+                St Joseph's
+              </button>
+              <button
+                class="schedule-tab-btn"
+                onclick="switchScheduleTab('st-thomas')"
+                id="tab-st-thomas"
+              >
+                St Thomas Aquinas
+              </button>
+              <button
+                class="schedule-tab-btn"
+                onclick="switchScheduleTab('st-korean')"
+                id="tab-st-korean"
+              >
+                Korean Min
+              </button>
             </div>
-            <div class="schedule-item">
-              <div class="schedule-item-title">Sunday Mass</div>
-              <div class="schedule-item-detail">10:30 AM</div>
+
+            <!-- St Joseph's Schedule -->
+            <div class="schedule-group active" id="schedule-st-joseph">
+              <div class="schedule-item">
+                <div class="schedule-item-title">Saturday Vigil</div>
+                <div class="schedule-item-detail">6:00 PM</div>
+              </div>
+              <div class="schedule-item">
+                <div class="schedule-item-title">Sunday Mass</div>
+                <div class="schedule-item-detail">10:30 AM</div>
+              </div>
+              <div class="schedule-item">
+                <div class="schedule-item-title">Weekday Liturgies</div>
+                <div class="schedule-item-detail">
+                  Tuesday &amp; Thursday — 9:00 AM
+                </div>
+              </div>
+              <div class="schedule-card-footer">
+                <address class="schedule-church-address">
+                  <i class="fas fa-map-marker-alt"></i> St Joseph's Church, 30
+                  Fitzgerald St, South Yarra
+                </address>
+                <a
+                  href="https://maps.google.com/?q=St+Joseph+Catholic+Church+South+Yarra"
+                  target="_blank"
+                  class="schedule-map-link"
+                  ><i class="fas fa-directions"></i> View Google Map</a
+                >
+              </div>
             </div>
-            <div class="schedule-item">
-              <div class="schedule-item-title">Weekday Liturgies</div>
-              <div class="schedule-item-detail">Tuesday &amp; Thursday — 9:00 AM</div>
+
+            <!-- St Thomas Aquinas Schedule -->
+            <div class="schedule-group" id="schedule-st-thomas">
+              <div class="schedule-item">
+                <div class="schedule-item-title">Sunday Mass</div>
+                <div class="schedule-item-detail">9:00 AM</div>
+              </div>
+              <div class="schedule-item">
+                <div class="schedule-item-title">Weekday Liturgies</div>
+                <div class="schedule-item-detail">
+                  Wednesday &amp; Friday — 9:00 AM
+                </div>
+              </div>
+              <div class="schedule-card-footer">
+                <address class="schedule-church-address">
+                  <i class="fas fa-map-marker-alt"></i> St Thomas Aquinas
+                  Church, 39-45 Bromby St, South Yarra
+                </address>
+                <a
+                  href="https://maps.google.com/?q=St+Thomas+Aquinas+Church+South+Yarra"
+                  target="_blank"
+                  class="schedule-map-link"
+                  ><i class="fas fa-directions"></i> View Google Map</a
+                >
+              </div>
             </div>
-            <div class="schedule-card-footer">
-              <address class="schedule-church-address"><i class="fas fa-map-marker-alt"></i> St Joseph's Church, 30 Fitzgerald St, South Yarra</address>
-              <a href="https://maps.google.com/?q=St+Joseph+Catholic+Church+South+Yarra" target="_blank" class="schedule-map-link"><i class="fas fa-directions"></i> View Google Map</a>
+
+            <!-- Korean Ministry Schedule -->
+            <div class="schedule-group" id="schedule-st-korean">
+              <div class="schedule-item">
+                <div class="schedule-item-title">Sunday Mass (Korean)</div>
+                <div class="schedule-item-detail">1:30 PM</div>
+              </div>
+              <div class="schedule-item">
+                <div class="schedule-item-title">Thursday Mass (Korean)</div>
+                <div class="schedule-item-detail">7:30 PM</div>
+              </div>
+              <div class="schedule-item">
+                <div class="schedule-item-title">Monthly Hobart Mass</div>
+                <div class="schedule-item-detail">
+                  Scheduled separately (Refer to bulletin)
+                </div>
+              </div>
+              <div class="schedule-card-footer">
+                <address class="schedule-church-address">
+                  <i class="fas fa-map-marker-alt"></i> Holy Family Church, 236
+                  Stephensons Rd, Mount Waverley
+                </address>
+                <a
+                  href="https://maps.google.com/?q=Holy+Family+Church+Mount+Waverley"
+                  target="_blank"
+                  class="schedule-map-link"
+                  ><i class="fas fa-directions"></i> View Google Map</a
+                >
+              </div>
             </div>
           </div>
-
-          <!-- St Thomas Aquinas Schedule -->
-          <div class="schedule-group" id="schedule-st-thomas">
-            <div class="schedule-item">
-              <div class="schedule-item-title">Sunday Mass</div>
-              <div class="schedule-item-detail">9:00 AM</div>
-            </div>
-            <div class="schedule-item">
-              <div class="schedule-item-title">Weekday Liturgies</div>
-              <div class="schedule-item-detail">Wednesday &amp; Friday — 9:00 AM</div>
-            </div>
-            <div class="schedule-card-footer">
-              <address class="schedule-church-address"><i class="fas fa-map-marker-alt"></i> St Thomas Aquinas Church, 39-45 Bromby St, South Yarra</address>
-              <a href="https://maps.google.com/?q=St+Thomas+Aquinas+Church+South+Yarra" target="_blank" class="schedule-map-link"><i class="fas fa-directions"></i> View Google Map</a>
-            </div>
-          </div>
-
-          <!-- Korean Ministry Schedule -->
-          <div class="schedule-group" id="schedule-st-korean">
-            <div class="schedule-item">
-              <div class="schedule-item-title">Sunday Mass (Korean)</div>
-              <div class="schedule-item-detail">1:30 PM</div>
-            </div>
-            <div class="schedule-item">
-              <div class="schedule-item-title">Thursday Mass (Korean)</div>
-              <div class="schedule-item-detail">7:30 PM</div>
-            </div>
-            <div class="schedule-item">
-              <div class="schedule-item-title">Monthly Hobart Mass</div>
-              <div class="schedule-item-detail">Scheduled separately (Refer to bulletin)</div>
-            </div>
-            <div class="schedule-card-footer">
-              <address class="schedule-church-address"><i class="fas fa-map-marker-alt"></i> Holy Family Church, 236 Stephensons Rd, Mount Waverley</address>
-              <a href="https://maps.google.com/?q=Holy+Family+Church+Mount+Waverley" target="_blank" class="schedule-map-link"><i class="fas fa-directions"></i> View Google Map</a>
-            </div>
-          </div>
-
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ==========================================================================
+      <!-- ==========================================================================
          HIGHLIGHTS GRID
          ========================================================================== */ -->
-    <section class="services-section" id="parish-highlights">
-      <div class="section-header">
-        <h2>Parish Services &amp; Life</h2>
-        <p>Connecting you to our vibrant spiritual life, sacramental preparations, and outreach missions.</p>
-      </div>
-
-      <div class="services-grid">
-        <!-- Mass & Liturgy times -->
-        <div class="service-card" id="highlight-liturgies">
-          <span class="service-icon-wrapper"><i class="fas fa-calendar-alt"></i></span>
-          <h3 class="service-card-title">Bulletins &amp; Liturgy</h3>
-          <p class="service-card-desc">Download our seasonal newsletter "The Scribble" (formerly Chronicle) and read the latest Sunday Notebook and Parish Bulletin.</p>
-          <a href="#" class="service-card-link" onclick="openModal('bulletins-modal')">Access Bulletins <i class="fas fa-arrow-right"></i></a>
+      <section class="services-section" id="parish-highlights">
+        <div class="section-header">
+          <h2>Parish Services &amp; Life</h2>
+          <p>
+            Connecting you to our vibrant spiritual life, sacramental
+            preparations, and outreach missions.
+          </p>
         </div>
 
-        <!-- Safeguarding -->
-        <div class="service-card" id="highlight-safeguarding">
-          <span class="service-icon-wrapper"><i class="fas fa-shield-alt"></i></span>
-          <h3 class="service-card-title">Safeguarding</h3>
-          <p class="service-card-desc">We are strongly committed to the safety and protection of children and the vulnerable. View our policies and reporting pathways.</p>
-          <a href="#" class="service-card-link" onclick="openModal('safeguarding-modal')">Safeguarding Policies <i class="fas fa-arrow-right"></i></a>
-        </div>
+        <div class="services-grid">
+          <!-- Mass & Liturgy times -->
+          <div class="service-card" id="highlight-liturgies">
+            <span class="service-icon-wrapper"
+              ><i class="fas fa-calendar-alt"></i
+            ></span>
+            <h3 class="service-card-title">Bulletins &amp; Liturgy</h3>
+            <p class="service-card-desc">
+              Download our seasonal newsletter "The Scribble" (formerly
+              Chronicle) and read the latest Sunday Notebook and Parish
+              Bulletin.
+            </p>
+            <a
+              href="#"
+              class="service-card-link"
+              onclick="openModal('bulletins-modal')"
+              >Access Bulletins <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
 
-        <!-- Sacraments -->
-        <div class="service-card" id="highlight-sacraments">
-          <span class="service-icon-wrapper"><i class="fas fa-cross"></i></span>
-          <h3 class="service-card-title">Sacraments</h3>
-          <p class="service-card-desc">Prepare for life's sacred moments: Holy Baptisms, Confirmations, First Communion, Weddings, and Anointing of the Sick.</p>
-          <a href="#" class="service-card-link" onclick="openModal('sacraments-modal')">Explore Sacraments <i class="fas fa-arrow-right"></i></a>
-        </div>
+          <!-- Safeguarding -->
+          <div class="service-card" id="highlight-safeguarding">
+            <span class="service-icon-wrapper"
+              ><i class="fas fa-shield-alt"></i
+            ></span>
+            <h3 class="service-card-title">Safeguarding</h3>
+            <p class="service-card-desc">
+              We are strongly committed to the safety and protection of children
+              and the vulnerable. View our policies and reporting pathways.
+            </p>
+            <a
+              href="#"
+              class="service-card-link"
+              onclick="openModal('safeguarding-modal')"
+              >Safeguarding Policies <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
 
-        <!-- Alfred Hospital care -->
-        <div class="service-card" id="highlight-hospital">
-          <span class="service-icon-wrapper"><i class="fas fa-hospital-user"></i></span>
-          <h3 class="service-card-title">Alfred Hospital visits</h3>
-          <p class="service-card-desc">We provide vital pastoral care and chaplaincy to the Alfred Hospital. Request support from the Spirituality Centre.</p>
-          <a href="#" class="service-card-link" onclick="openModal('hospital-modal')">Request Visit <i class="fas fa-arrow-right"></i></a>
-        </div>
+          <!-- Sacraments -->
+          <div class="service-card" id="highlight-sacraments">
+            <span class="service-icon-wrapper"
+              ><i class="fas fa-cross"></i
+            ></span>
+            <h3 class="service-card-title">Sacraments</h3>
+            <p class="service-card-desc">
+              Prepare for life's sacred moments: Holy Baptisms, Confirmations,
+              First Communion, Weddings, and Anointing of the Sick.
+            </p>
+            <a
+              href="#"
+              class="service-card-link"
+              onclick="openModal('sacraments-modal')"
+              >Explore Sacraments <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
 
-        <!-- SJOS outreach -->
-        <div class="service-card" id="highlight-sjos">
-          <span class="service-icon-wrapper"><i class="fas fa-hands-helping"></i></span>
-          <h3 class="service-card-title">St Joseph Outreach</h3>
-          <p class="service-card-desc">Serving the needy in South Yarra. St Joseph Outreach Services (SJOS) operates local crisis support and food pantry projects.</p>
-          <a href="#" class="service-card-link" onclick="openModal('sjos-modal')">Support SJOS <i class="fas fa-arrow-right"></i></a>
-        </div>
+          <!-- Alfred Hospital care -->
+          <div class="service-card" id="highlight-hospital">
+            <span class="service-icon-wrapper"
+              ><i class="fas fa-hospital-user"></i
+            ></span>
+            <h3 class="service-card-title">Alfred Hospital visits</h3>
+            <p class="service-card-desc">
+              We provide vital pastoral care and chaplaincy to the Alfred
+              Hospital. Request support from the Spirituality Centre.
+            </p>
+            <a
+              href="#"
+              class="service-card-link"
+              onclick="openModal('hospital-modal')"
+              >Request Visit <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
 
-        <!-- Bookings -->
-        <div class="service-card" id="highlight-bookings">
-          <span class="service-icon-wrapper"><i class="fas fa-key"></i></span>
-          <h3 class="service-card-title">Facility Bookings</h3>
-          <p class="service-card-desc">Hire our beautiful parish hall and spaces. Ideal for community gatherings, rehearsals, and private meetings.</p>
-          <a href="#" class="service-card-link" onclick="openModal('bookings-modal')">Hire Facilities <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-    </section>
+          <!-- SJOS outreach -->
+          <div class="service-card" id="highlight-sjos">
+            <span class="service-icon-wrapper"
+              ><i class="fas fa-hands-helping"></i
+            ></span>
+            <h3 class="service-card-title">St Joseph Outreach</h3>
+            <p class="service-card-desc">
+              Serving the needy in South Yarra. St Joseph Outreach Services
+              (SJOS) operates local crisis support and food pantry projects.
+            </p>
+            <a
+              href="#"
+              class="service-card-link"
+              onclick="openModal('sjos-modal')"
+              >Support SJOS <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
 
-    <!-- ==========================================================================
+          <!-- Bookings -->
+          <div class="service-card" id="highlight-bookings">
+            <span class="service-icon-wrapper"><i class="fas fa-key"></i></span>
+            <h3 class="service-card-title">Facility Bookings</h3>
+            <p class="service-card-desc">
+              Hire our beautiful parish hall and spaces. Ideal for community
+              gatherings, rehearsals, and private meetings.
+            </p>
+            <a
+              href="#"
+              class="service-card-link"
+              onclick="openModal('bookings-modal')"
+              >Hire Facilities <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
          KOREAN CATHOLIC MINISTRY MELBOURNE
          ========================================================================== */ -->
-    <section class="korean-ministry-section" id="korean-chaplaincy">
-      <div class="korean-ministry-wrapper">
-        <div class="korean-content">
-          <span class="korean-tagline" id="korean-tag">Melbourne Korean Chaplaincy</span>
-          <h2 class="korean-title" id="korean-title">천주교 멜번한인 성당</h2>
-          <div class="korean-korean-desc" id="korean-korean-desc">
-            멜번한인성당은 호주 멜버른 지역의 한인 신자 공동체로, 마운트 웨이벌리에 위치한 Holy Family 성당에서 신앙생활을 이어가고 있습니다. 멜번 아우구스티노 수도회의 보살핌 속에 매주 미사를 봉헌합니다.
-          </div>
-          <div class="korean-english-desc" id="korean-english-desc">
-            As a key part of the Augustinian mission, we provide chaplaincy to the Korean Catholic Community located at Mount Waverley. We welcome all Korean-speaking families and visitors to our regular liturgies.
-          </div>
-          <div class="korean-times-box">
-            <div>
-              <div class="korean-time-item-title" id="korean-label-sunday">주일 미사 / Sunday Mass</div>
-              <div class="korean-time-item-desc" id="korean-time-sunday">매주 일요일 오후 1:30 PM</div>
+      <section class="korean-ministry-section" id="korean-chaplaincy">
+        <div class="korean-ministry-wrapper">
+          <div class="korean-content">
+            <span class="korean-tagline" id="korean-tag"
+              >Melbourne Korean Chaplaincy</span
+            >
+            <h2 class="korean-title" id="korean-title">천주교 멜번한인 성당</h2>
+            <div class="korean-korean-desc" id="korean-korean-desc">
+              멜번한인성당은 호주 멜버른 지역의 한인 신자 공동체로, 마운트
+              웨이벌리에 위치한 Holy Family 성당에서 신앙생활을 이어가고
+              있습니다. 멜번 아우구스티노 수도회의 보살핌 속에 매주 미사를
+              봉헌합니다.
             </div>
-            <div>
-              <div class="korean-time-item-title" id="korean-label-weekday">평일 미사 / Weekday Mass</div>
-              <div class="korean-time-item-desc" id="korean-time-weekday">매주 목요일 오후 7:30 PM</div>
+            <div class="korean-english-desc" id="korean-english-desc">
+              As a key part of the Augustinian mission, we provide chaplaincy to
+              the Korean Catholic Community located at Mount Waverley. We
+              welcome all Korean-speaking families and visitors to our regular
+              liturgies.
             </div>
+            <div class="korean-times-box">
+              <div>
+                <div class="korean-time-item-title" id="korean-label-sunday">
+                  주일 미사 / Sunday Mass
+                </div>
+                <div class="korean-time-item-desc" id="korean-time-sunday">
+                  매주 일요일 오후 1:30 PM
+                </div>
+              </div>
+              <div>
+                <div class="korean-time-item-title" id="korean-label-weekday">
+                  평일 미사 / Weekday Mass
+                </div>
+                <div class="korean-time-item-desc" id="korean-time-weekday">
+                  매주 목요일 오후 7:30 PM
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="korean-media">
+            <div
+              class="korean-img"
+              aria-label="Korean Catholic Ministry Gathering"
+            ></div>
           </div>
         </div>
-        <div class="korean-media">
-          <div class="korean-img" aria-label="Korean Catholic Ministry Gathering"></div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ==========================================================================
+      <!-- ==========================================================================
          AUGUSTINIAN HERITAGE & HISTORY
          ========================================================================== */ -->
-    <section class="heritage-section" id="augustinian-heritage">
-      <div class="heritage-grid">
-        <div class="heritage-media">
-          <div class="heritage-bg-img" aria-label="Augustinian 50th Anniversary Logo"></div>
-        </div>
-        <div class="heritage-content">
-          <h2>The Augustinian Tradition</h2>
-          <p>The Order of St Augustine (OSA) has ministered in South Yarra for over 50 years, celebrating community life, spiritual intellectualism, and local service.</p>
-          <p>We trace our historical roots back to the very foundation of the Melbourne church, following in the rich legacy of Archbishop James Alipius Goold OSA, Melbourne's pioneer bishop.</p>
-          
-          <div class="heritage-features">
-            <div class="heritage-feat-item">
-              <span class="heritage-feat-icon"><i class="fas fa-check-circle"></i></span>
-              <div class="heritage-feat-text">
-                <h4>50 Years in South Yarra</h4>
-                <p>Celebrating the Golden Jubilee of Augustinian service at St Joseph's Parish.</p>
+      <section class="heritage-section" id="augustinian-heritage">
+        <div class="heritage-grid">
+          <div class="heritage-media">
+            <div
+              class="heritage-bg-img"
+              aria-label="Augustinian 50th Anniversary Logo"
+            ></div>
+          </div>
+          <div class="heritage-content">
+            <h2>The Augustinian Tradition</h2>
+            <p>
+              The Order of St Augustine (OSA) has ministered in South Yarra for
+              over 50 years, celebrating community life, spiritual
+              intellectualism, and local service.
+            </p>
+            <p>
+              We trace our historical roots back to the very foundation of the
+              Melbourne church, following in the rich legacy of Archbishop James
+              Alipius Goold OSA, Melbourne's pioneer bishop.
+            </p>
+
+            <div class="heritage-features">
+              <div class="heritage-feat-item">
+                <span class="heritage-feat-icon"
+                  ><i class="fas fa-check-circle"></i
+                ></span>
+                <div class="heritage-feat-text">
+                  <h4>50 Years in South Yarra</h4>
+                  <p>
+                    Celebrating the Golden Jubilee of Augustinian service at St
+                    Joseph's Parish.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="heritage-feat-item">
-              <span class="heritage-feat-icon"><i class="fas fa-check-circle"></i></span>
-              <div class="heritage-feat-text">
-                <h4>Augustinian Priests</h4>
-                <p>Leading our communities with compassion, prayer, and pastoral open-door values.</p>
+              <div class="heritage-feat-item">
+                <span class="heritage-feat-icon"
+                  ><i class="fas fa-check-circle"></i
+                ></span>
+                <div class="heritage-feat-text">
+                  <h4>Augustinian Priests</h4>
+                  <p>
+                    Leading our communities with compassion, prayer, and
+                    pastoral open-door values.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <!-- ==========================================================================
+    <!-- ==========================================================================
        RETRACTABLE SIDE THANKSGIVING DRAWER
        ========================================================================== */ -->
-  <div class="drawer-overlay" id="giving-drawer-overlay" onclick="toggleGivingDrawer()"></div>
-  <div class="giving-drawer" id="giving-drawer">
-    <div class="drawer-header">
-      <h3>Thanksgiving Support</h3>
-      <button class="drawer-close-btn" onclick="toggleGivingDrawer()"><i class="fas fa-times"></i></button>
-    </div>
-    <div class="drawer-body">
-      <p class="giving-intro">To support the Parish of South Yarra and the pastoral care of our churches and Augustinian order, you can securely donate via bank transfer, CDFpay, or by scanning our QR codes.</p>
-      
-      <div class="giving-method-card">
-        <h4>1. Online Giving (CDFPay)</h4>
-        <div class="giving-qr-wrapper">
-          <svg class="giving-qr-code" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="CDFPay QR Code">
-            <!-- Simulated QR Code SVG -->
-            <rect x="10" y="10" width="80" height="80" fill="none" stroke="var(--primary-burgundy)" stroke-width="2"/>
-            <rect x="15" y="15" width="20" height="20" fill="var(--primary-burgundy)"/>
-            <rect x="65" y="15" width="20" height="20" fill="var(--primary-burgundy)"/>
-            <rect x="15" y="65" width="20" height="20" fill="var(--primary-burgundy)"/>
-            <rect x="40" y="40" width="20" height="20" fill="var(--accent-gold)"/>
-            <circle cx="50" cy="50" r="4" fill="var(--primary-burgundy)"/>
-            <path d="M 45 25 L 55 25 M 25 45 L 25 55 M 75 45 L 75 55" stroke="var(--primary-burgundy)" stroke-width="4"/>
-          </svg>
-          <div class="giving-qr-desc">
-            <p>Scan the QR Code to donate securely via our Archdiocesan **CDFPay South Yarra Portal**.</p>
-            <p style="margin-top: 0.5rem;"><a href="http://bit.ly/CDFpaySouthYarra" target="_blank" class="btn btn-gold btn-sm" style="font-size:0.75rem; padding:0.4rem 0.8rem;">Open CDFPay Link</a></p>
+    <div
+      class="drawer-overlay"
+      id="giving-drawer-overlay"
+      onclick="toggleGivingDrawer()"
+    ></div>
+    <div class="giving-drawer" id="giving-drawer">
+      <div class="drawer-header">
+        <h3>Thanksgiving Support</h3>
+        <button class="drawer-close-btn" onclick="toggleGivingDrawer()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="drawer-body">
+        <p class="giving-intro">
+          To support the Parish of South Yarra and the pastoral care of our
+          churches and Augustinian order, you can securely donate via bank
+          transfer, CDFpay, or by scanning our QR codes.
+        </p>
+
+        <div class="giving-method-card">
+          <h4>1. Online Giving (CDFPay)</h4>
+          <div class="giving-qr-wrapper">
+            <svg
+              class="giving-qr-code"
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-label="CDFPay QR Code"
+            >
+              <!-- Simulated QR Code SVG updated to map dynamically to the new primary color variable -->
+              <rect
+                x="10"
+                y="10"
+                width="80"
+                height="80"
+                fill="none"
+                stroke="var(--primary-burgundy)"
+                stroke-width="2"
+              />
+              <rect
+                x="15"
+                y="15"
+                width="20"
+                height="20"
+                fill="var(--primary-burgundy)"
+              />
+              <rect
+                x="65"
+                y="15"
+                width="20"
+                height="20"
+                fill="var(--primary-burgundy)"
+              />
+              <rect
+                x="15"
+                y="65"
+                width="20"
+                height="20"
+                fill="var(--primary-burgundy)"
+              />
+              <rect
+                x="40"
+                y="40"
+                width="20"
+                height="20"
+                fill="var(--accent-gold)"
+              />
+              <circle cx="50" cy="50" r="4" fill="var(--primary-burgundy)" />
+              <path
+                d="M 45 25 L 55 25 M 25 45 L 25 55 M 75 45 L 75 55"
+                stroke="var(--primary-burgundy)"
+                stroke-width="4"
+              />
+            </svg>
+            <div class="giving-qr-desc">
+              <p>
+                Scan the QR Code to donate securely via our Archdiocesan
+                **CDFPay South Yarra Portal**.
+              </p>
+              <p style="margin-top: 0.5rem">
+                <a
+                  href="http://bit.ly/CDFpaySouthYarra"
+                  target="_blank"
+                  class="btn btn-gold btn-sm"
+                  style="font-size: 0.75rem; padding: 0.4rem 0.8rem"
+                  >Open CDFPay Link</a
+                >
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="giving-method-card">
-        <h4>2. Support the Parish</h4>
-        <ul class="bank-details-list">
-          <li><span class="label">Account Name:</span> <span class="value">St Joseph's South Yarra</span></li>
-          <li><span class="label">BSB Number:</span> <span class="value">083-347</span></li>
-          <li><span class="label">Account Number:</span> <span class="value">678529506</span></li>
-        </ul>
-      </div>
+        <div class="giving-method-card">
+          <h4>2. Support the Parish</h4>
+          <ul class="bank-details-list">
+            <li>
+              <span class="label">Account Name:</span>
+              <span class="value">St Joseph's South Yarra</span>
+            </li>
+            <li>
+              <span class="label">BSB Number:</span>
+              <span class="value">083-347</span>
+            </li>
+            <li>
+              <span class="label">Account Number:</span>
+              <span class="value">678529506</span>
+            </li>
+          </ul>
+        </div>
 
-      <div class="giving-method-card">
-        <h4>3. Support the Augustinians</h4>
-        <ul class="bank-details-list">
-          <li><span class="label">Account Name:</span> <span class="value">SY St Joseph's Augustinian No. 2</span></li>
-          <li><span class="label">BSB Number:</span> <span class="value">083-347</span></li>
-          <li><span class="label">Account Number:</span> <span class="value">682575054</span></li>
-        </ul>
+        <div class="giving-method-card">
+          <h4>3. Support the Augustinians</h4>
+          <ul class="bank-details-list">
+            <li>
+              <span class="label">Account Name:</span>
+              <span class="value">SY St Joseph's Augustinian No. 2</span>
+            </li>
+            <li>
+              <span class="label">BSB Number:</span>
+              <span class="value">083-347</span>
+            </li>
+            <li>
+              <span class="label">Account Number:</span>
+              <span class="value">682575054</span>
+            </li>
+          </ul>
+        </div>
+
+        <p
+          style="
+            font-size: 0.8rem;
+            font-style: italic;
+            color: var(--text-muted);
+            text-align: center;
+          "
+        >
+          Cheques can be mailed to: P.O. Box 21, South Yarra, VIC 3141
+        </p>
       </div>
-      
-      <p style="font-size:0.8rem; font-style:italic; color:var(--text-muted); text-align:center;">Cheques can be mailed to: P.O. Box 21, South Yarra, VIC 3141</p>
     </div>
-  </div>
 
-  <!-- ==========================================================================
+    <!-- ==========================================================================
        DYNAMIC MODAL OVERLAYS (SUB-PAGES)
        ========================================================================== */ -->
-  
-  <!-- About Us Modal -->
-  <div class="modal-overlay" id="about-modal">
-    <div class="modal-container">
-      <div class="modal-header">
-        <h3>About our Parish</h3>
-        <button class="modal-close-btn" onclick="closeModal('about-modal')"><i class="fas fa-times"></i></button>
-      </div>
-      <div class="modal-body">
-        <h4>Welcome to South Yarra Parish</h4>
-        <p>The Parish of South Yarra is a welcoming Catholic community in the inner east of Melbourne, incorporating the congregations of St Joseph's Church and St Thomas Aquinas' Church. We are proudly served by the Order of St Augustine.</p>
-        <h4>Our Augustinian Priests &amp; Team</h4>
-        <ul>
-          <li><strong>Parish Priest:</strong> Fr. Brian OSA</li>
-          <li><strong>Priest In Residence:</strong> Fr. Barry Clifford OSA (We warmly welcome Fr. Barry back from serving in the UK)</li>
-          <li><strong>Korean Chaplaincy:</strong> Fr. David</li>
-        </ul>
-        <h4>Downloads &amp; Forms</h4>
-        <p><a href="https://parishofsouthyarra.org.au/wp-content/uploads/2025/11/New-Parishioner-Form.pdf" target="_blank" style="font-weight: 700; color:var(--primary-burgundy);"><i class="far fa-file-pdf"></i> Download New Parishioner Form</a></p>
-      </div>
-    </div>
-  </div>
 
-  <!-- Sacraments Modal -->
-  <div class="modal-overlay" id="sacraments-modal">
-    <div class="modal-container">
-      <div class="modal-header">
-        <h3>Holy Sacraments</h3>
-        <button class="modal-close-btn" onclick="closeModal('sacraments-modal')"><i class="fas fa-times"></i></button>
-      </div>
-      <div class="modal-body" style="max-height: 60vh;">
-        <h4>Sacraments &amp; Liturgy</h4>
-        <p>The sacramental life of our church is central to our faith. We are delighted to support you on your spiritual journey:</p>
-        
-        <h5 style="font-size:1.1rem; color:var(--primary-burgundy); margin-top:1rem; font-weight:700;">1. Holy Baptisms</h5>
-        <p>Baptisms are celebrated on Sundays. Preparation programs are run regularly to welcome infants and parents. Contact the parish office to book.</p>
-        
-        <h5 style="font-size:1.1rem; color:var(--primary-burgundy); margin-top:1rem; font-weight:700;">2. Weddings &amp; Marriage Preparation</h5>
-        <p>Our beautiful historic churches are beloved wedding venues. Couples must participate in a sacramental marriage preparation program beforehand.</p>
-        
-        <h5 style="font-size:1.1rem; color:var(--primary-burgundy); margin-top:1rem; font-weight:700;">3. Rite of Christian Initiation of Adults (RCIA)</h5>
-        <p>Our RCIA Program concludes annually with adult baptisms and confirmation during the Easter Vigil. If you are exploring joining the Catholic church, we welcome you to join the cohort.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Bulletins Modal -->
-  <div class="modal-overlay" id="bulletins-modal">
-    <div class="modal-container">
-      <div class="modal-header">
-        <h3>Parish Bulletins &amp; Media</h3>
-        <button class="modal-close-btn" onclick="closeModal('bulletins-modal')"><i class="fas fa-times"></i></button>
-      </div>
-      <div class="modal-body">
-        <h4>Weekly Bulletins</h4>
-        <p>Stay up to date with the latest Parish announcements and liturgical calendars.</p>
-        <ul>
-          <li><a href="#" target="_blank"><i class="far fa-file-pdf"></i> Weekly Bulletin — May 24, 2026</a></li>
-          <li><a href="#" target="_blank"><i class="far fa-file-pdf"></i> Sunday Notebook — May 17, 2026</a></li>
-        </ul>
-        
-        <h4>"The Scribble" Newsletter</h4>
-        <p>Read the Autumn 2026 issue of our seasonal parish newsletter, featuring extensive coverage of the Augustinian arrival 50th Anniversary in South Yarra.</p>
-        <p><a href="#" class="btn btn-secondary btn-sm"><i class="fas fa-download"></i> Download The Scribble (PDF)</a></p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Safeguarding Modal -->
-  <div class="modal-overlay" id="safeguarding-modal">
-    <div class="modal-container">
-      <div class="modal-header">
-        <h3>Child Safety &amp; Safeguarding</h3>
-        <button class="modal-close-btn" onclick="closeModal('safeguarding-modal')"><i class="fas fa-times"></i></button>
-      </div>
-      <div class="modal-body">
-        <h4 style="color:red;"><i class="fas fa-exclamation-triangle"></i> committed to the safety of children</h4>
-        <p>The Parish of South Yarra is strongly committed to the safety, protection, and well-being of all children, young people, and vulnerable adults. We enforce a zero-tolerance policy against child abuse and misconduct.</p>
-        
-        <h4>Essential Safeguarding Documents</h4>
-        <ul>
-          <li><a href="#"><i class="fas fa-file-alt"></i> Archdiocesan Code of Conduct for volunteers</a></li>
-          <li><a href="#"><i class="fas fa-file-alt"></i> Child Safe Policy 2026</a></li>
-          <li><a href="#"><i class="fas fa-file-alt"></i> Volunteer Compliance Requirements</a></li>
-        </ul>
-        
-        <h4>Reporting Concerns</h4>
-        <p>To report any concerns, please contact our Parish Safeguarding Officers or the Archdiocesan Professional Standards Unit on (03) 9926 5677.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Alfred Hospital Modal -->
-  <div class="modal-overlay" id="hospital-modal">
-    <div class="modal-container">
-      <div class="modal-header">
-        <h3>Alfred Hospital Chaplaincy</h3>
-        <button class="modal-close-btn" onclick="closeModal('hospital-modal')"><i class="fas fa-times"></i></button>
-      </div>
-      <div class="modal-body">
-        <h4>Pastoral Care &amp; Visits</h4>
-        <p>If you or a loved one are currently staying at the **Alfred Hospital** in South Yarra and would like anointing of the sick, communion, or a pastoral support visit, please get in touch.</p>
-        <p style="font-size:1.1rem; font-weight:700; text-align:center; padding:1.5rem; background:#F4EADB; border-radius:4px; margin:1.5rem 0;">
-          <i class="fas fa-phone-alt"></i> Alfred Hospital Spirituality Centre: <a href="tel:0390763138" style="color:var(--primary-burgundy); font-weight:800;">(03) 9076 3138</a>
-        </p>
-        <p>Our priests work in close collaboration with the hospital's multifaith care team to ensure timely support.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- SJOS Modal -->
-  <div class="modal-overlay" id="sjos-modal">
-    <div class="modal-container">
-      <div class="modal-header">
-        <h3>St Joseph Outreach Services (SJOS)</h3>
-        <button class="modal-close-btn" onclick="closeModal('sjos-modal')"><i class="fas fa-times"></i></button>
-      </div>
-      <div class="modal-body">
-        <h4>St Joseph Outreach Services (SJOS)</h4>
-        <p>St Joseph Outreach Services (SJOS) is a registered charitable initiative of the South Yarra parish community, dedicated to providing compassionate aid to isolated and disadvantaged individuals.</p>
-        <h4>Key Support Projects</h4>
-        <ul>
-          <li><strong>Emergency Food Pantry:</strong> Providing staple supplies to needy residents in the public housing blocks.</li>
-          <li><strong>Laudato Si Garden:</strong> Promoting ecological care, fresh vegetable growing, and urban community participation.</li>
-          <li><strong>Crisis Material Aid:</strong> Supplying warm clothing, blankets, and essential household items.</li>
-        </ul>
-        <p>Donations of non-perishable foods and financial contributions are deeply appreciated and are tax-deductible.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Bookings Modal -->
-  <div class="modal-overlay" id="bookings-modal">
-    <div class="modal-container">
-      <div class="modal-header">
-        <h3>Parish Facility Hire</h3>
-        <button class="modal-close-btn" onclick="closeModal('bookings-modal')"><i class="fas fa-times"></i></button>
-      </div>
-      <div class="modal-body">
-        <h4>Facility Hire</h4>
-        <p>We provide various parish spaces, meeting rooms, and halls for hire to local community groups, cultural projects, and tenants.</p>
-        <h4>Available facilities</h4>
-        <ul>
-          <li><strong>St Joseph's Parish Hall:</strong> Fits up to 100 people, features a full kitchen and wooden floor.</li>
-          <li><strong>St Thomas Aquinas Meeting Rooms:</strong> Ideal for smaller executive councils, prayer cohorts, or rehearsals.</li>
-        </ul>
-        <p>For rates, availability calendars, and booking terms, please contact the Parish Secretary on (03) 9826 9076.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Contact Modal -->
-  <div class="modal-overlay" id="contact-modal">
-    <div class="modal-container">
-      <div class="modal-header">
-        <h3>Contact Us</h3>
-        <button class="modal-close-btn" onclick="closeModal('contact-modal')"><i class="fas fa-times"></i></button>
-      </div>
-      <div class="modal-body">
-        <h4>Get in Touch</h4>
-        <p>Please contact the parish office for general administration, thanksgiving enquiries, booking baptism schedules, and scheduling appointments with our priests.</p>
-        
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem; margin:1.5rem 0;">
-          <div>
-            <h5 style="font-weight:700; color:var(--primary-burgundy);">Office Hours</h5>
-            <p>Tuesday to Friday — 9:30 AM to 4:30 PM<br>(Closed Monday, Saturday &amp; Sunday)</p>
-          </div>
-          <div>
-            <h5 style="font-weight:700; color:var(--primary-burgundy);">Postal Address</h5>
-            <p>P.O. Box 21, South Yarra, VIC 3141</p>
-          </div>
+    <!-- About Us Modal -->
+    <div class="modal-overlay" id="about-modal">
+      <div class="modal-container">
+        <div class="modal-header">
+          <h3>About our Parish</h3>
+          <button class="modal-close-btn" onclick="closeModal('about-modal')">
+            <i class="fas fa-times"></i>
+          </button>
         </div>
-        
-        <h5 style="font-weight:700; color:var(--primary-burgundy); margin-bottom:0.5rem;">Send an Online Message</h5>
-        <form id="contact-form" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent successfully.'); closeModal('contact-modal');">
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1rem;">
-            <input type="text" placeholder="Your Name" required style="padding:0.6rem; border:1px solid var(--border-light); border-radius:4px;">
-            <input type="email" placeholder="Your Email" required style="padding:0.6rem; border:1px solid var(--border-light); border-radius:4px;">
+        <div class="modal-body">
+          <h4>Welcome to South Yarra Parish</h4>
+          <p>
+            The Parish of South Yarra is a welcoming Catholic community in the
+            inner east of Melbourne, incorporating the congregations of St
+            Joseph's Church and St Thomas Aquinas' Church. We are proudly served
+            by the Order of St Augustine.
+          </p>
+          <h4>Our Augustinian Priests &amp; Team</h4>
+          <ul>
+            <li><strong>Parish Priest:</strong> Fr. Brian OSA</li>
+            <li>
+              <strong>Priest In Residence:</strong> Fr. Barry Clifford OSA (We
+              warmly welcome Fr. Barry back from serving in the UK)
+            </li>
+            <li><strong>Korean Chaplaincy:</strong> Fr. David</li>
+          </ul>
+          <h4>Downloads &amp; Forms</h4>
+          <p>
+            <a
+              href="https://parishofsouthyarra.org.au/wp-content/uploads/2025/11/New-Parishioner-Form.pdf"
+              target="_blank"
+              style="font-weight: 700; color: var(--primary-burgundy)"
+              ><i class="far fa-file-pdf"></i> Download New Parishioner Form</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sacraments Modal -->
+    <div class="modal-overlay" id="sacraments-modal">
+      <div class="modal-container">
+        <div class="modal-header">
+          <h3>Holy Sacraments</h3>
+          <button
+            class="modal-close-btn"
+            onclick="closeModal('sacraments-modal')"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body" style="max-height: 60vh">
+          <h4>Sacraments &amp; Liturgy</h4>
+          <p>
+            The sacramental life of our church is central to our faith. We are
+            delighted to support you on your spiritual journey:
+          </p>
+
+          <h5
+            style="
+              font-size: 1.1rem;
+              color: var(--primary-burgundy);
+              margin-top: 1rem;
+              font-weight: 700;
+            "
+          >
+            1. Holy Baptisms
+          </h5>
+          <p>
+            Baptisms are celebrated on Sundays. Preparation programs are run
+            regularly to welcome infants and parents. Contact the parish office
+            to book.
+          </p>
+
+          <h5
+            style="
+              font-size: 1.1rem;
+              color: var(--primary-burgundy);
+              margin-top: 1rem;
+              font-weight: 700;
+            "
+          >
+            2. Weddings &amp; Marriage Preparation
+          </h5>
+          <p>
+            Our beautiful historic churches are beloved wedding venues. Couples
+            must participate in a sacramental marriage preparation program
+            beforehand.
+          </p>
+
+          <h5
+            style="
+              font-size: 1.1rem;
+              color: var(--primary-burgundy);
+              margin-top: 1rem;
+              font-weight: 700;
+            "
+          >
+            3. Rite of Christian Initiation of Adults (RCIA)
+          </h5>
+          <p>
+            Our RCIA Program concludes annually with adult baptisms and
+            confirmation during the Easter Vigil. If you are exploring joining
+            the Catholic church, we welcome you to join the cohort.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bulletins Modal -->
+    <div class="modal-overlay" id="bulletins-modal">
+      <div class="modal-container">
+        <div class="modal-header">
+          <h3>Parish Bulletins &amp; Media</h3>
+          <button
+            class="modal-close-btn"
+            onclick="closeModal('bulletins-modal')"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h4>Weekly Bulletins</h4>
+          <p>
+            Stay up to date with the latest Parish announcements and liturgical
+            calendars.
+          </p>
+          <ul>
+            <li>
+              <a href="#" target="_blank"
+                ><i class="far fa-file-pdf"></i> Weekly Bulletin — May 24,
+                2026</a
+              >
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><i class="far fa-file-pdf"></i> Sunday Notebook — May 17,
+                2026</a
+              >
+            </li>
+          </ul>
+
+          <h4>"The Scribble" Newsletter</h4>
+          <p>
+            Read the Autumn 2026 issue of our seasonal parish newsletter,
+            featuring extensive coverage of the Augustinian arrival 50th
+            Anniversary in South Yarra.
+          </p>
+          <p>
+            <a href="#" class="btn btn-secondary btn-sm"
+              ><i class="fas fa-download"></i> Download The Scribble (PDF)</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Safeguarding Modal -->
+    <div class="modal-overlay" id="safeguarding-modal">
+      <div class="modal-container">
+        <div class="modal-header">
+          <h3>Child Safety &amp; Safeguarding</h3>
+          <button
+            class="modal-close-btn"
+            onclick="closeModal('safeguarding-modal')"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h4 style="color: red">
+            <i class="fas fa-exclamation-triangle"></i> committed to the safety
+            of children
+          </h4>
+          <p>
+            The Parish of South Yarra is strongly committed to the safety,
+            protection, and well-being of all children, young people, and
+            vulnerable adults. We enforce a zero-tolerance policy against child
+            abuse and misconduct.
+          </p>
+
+          <h4>Essential Safeguarding Documents</h4>
+          <ul>
+            <li>
+              <a href="#"
+                ><i class="fas fa-file-alt"></i> Archdiocesan Code of Conduct
+                for volunteers</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-file-alt"></i> Child Safe Policy 2026</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-file-alt"></i> Volunteer Compliance
+                Requirements</a
+              >
+            </li>
+          </ul>
+
+          <h4>Reporting Concerns</h4>
+          <p>
+            To report any concerns, please contact our Parish Safeguarding
+            Officers or the Archdiocesan Professional Standards Unit on (03)
+            9926 5677.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Alfred Hospital Modal -->
+    <div class="modal-overlay" id="hospital-modal">
+      <div class="modal-container">
+        <div class="modal-header">
+          <h3>Alfred Hospital Chaplaincy</h3>
+          <button
+            class="modal-close-btn"
+            onclick="closeModal('hospital-modal')"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h4>Pastoral Care &amp; Visits</h4>
+          <p>
+            If you or a loved one are currently staying at the **Alfred
+            Hospital** in South Yarra and would like anointing of the sick,
+            communion, or a pastoral support visit, please get in touch.
+          </p>
+          <p
+            style="
+              font-size: 1.1rem;
+              font-weight: 700;
+              text-align: center;
+              padding: 1.5rem;
+              background: #f4eadb;
+              border-radius: 4px;
+              margin: 1.5rem 0;
+            "
+          >
+            <i class="fas fa-phone-alt"></i> Alfred Hospital Spirituality
+            Centre:
+            <a
+              href="tel:0390763138"
+              style="color: var(--primary-burgundy); font-weight: 800"
+              >(03) 9076 3138</a
+            >
+          </p>
+          <p>
+            Our priests work in close collaboration with the hospital's
+            multifaith care team to ensure timely support.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SJOS Modal -->
+    <div class="modal-overlay" id="sjos-modal">
+      <div class="modal-container">
+        <div class="modal-header">
+          <h3>St Joseph Outreach Services (SJOS)</h3>
+          <button class="modal-close-btn" onclick="closeModal('sjos-modal')">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h4>St Joseph Outreach Services (SJOS)</h4>
+          <p>
+            St Joseph Outreach Services (SJOS) is a registered charitable
+            initiative of the South Yarra parish community, dedicated to
+            providing compassionate aid to isolated and disadvantaged
+            individuals.
+          </p>
+          <h4>Key Support Projects</h4>
+          <ul>
+            <li>
+              <strong>Emergency Food Pantry:</strong> Providing staple supplies
+              to needy residents in the public housing blocks.
+            </li>
+            <li>
+              <strong>Laudato Si Garden:</strong> Promoting ecological care,
+              fresh vegetable growing, and urban community participation.
+            </li>
+            <li>
+              <strong>Crisis Material Aid:</strong> Supplying warm clothing,
+              blankets, and essential household items.
+            </li>
+          </ul>
+          <p>
+            Donations of non-perishable foods and financial contributions are
+            deeply appreciated and are tax-deductible.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bookings Modal -->
+    <div class="modal-overlay" id="bookings-modal">
+      <div class="modal-container">
+        <div class="modal-header">
+          <h3>Parish Facility Hire</h3>
+          <button
+            class="modal-close-btn"
+            onclick="closeModal('bookings-modal')"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h4>Facility Hire</h4>
+          <p>
+            We provide various parish spaces, meeting rooms, and halls for hire
+            to local community groups, cultural projects, and tenants.
+          </p>
+          <h4>Available facilities</h4>
+          <ul>
+            <li>
+              <strong>St Joseph's Parish Hall:</strong> Fits up to 100 people,
+              features a full kitchen and wooden floor.
+            </li>
+            <li>
+              <strong>St Thomas Aquinas Meeting Rooms:</strong> Ideal for
+              smaller executive councils, prayer cohorts, or rehearsals.
+            </li>
+          </ul>
+          <p>
+            For rates, availability calendars, and booking terms, please contact
+            the Parish Secretary on (03) 9826 9076.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal-overlay" id="contact-modal">
+      <div class="modal-container">
+        <div class="modal-header">
+          <h3>Contact Us</h3>
+          <button class="modal-close-btn" onclick="closeModal('contact-modal')">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h4>Get in Touch</h4>
+          <p>
+            Please contact the parish office for general administration,
+            thanksgiving enquiries, booking baptism schedules, and scheduling
+            appointments with our priests.
+          </p>
+
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 2rem;
+              margin: 1.5rem 0;
+            "
+          >
+            <div>
+              <h5 style="font-weight: 700; color: var(--primary-burgundy)">
+                Office Hours
+              </h5>
+              <p>
+                Tuesday to Friday — 9:30 AM to 4:30 PM<br />(Closed Monday,
+                Saturday &amp; Sunday)
+              </p>
+            </div>
+            <div>
+              <h5 style="font-weight: 700; color: var(--primary-burgundy)">
+                Postal Address
+              </h5>
+              <p>P.O. Box 21, South Yarra, VIC 3141</p>
+            </div>
           </div>
-          <textarea placeholder="Your Message" required style="padding:0.6rem; border:1px solid var(--border-light); border-radius:4px; width:100%; height:100px; margin-bottom:1rem;"></textarea>
-          <button type="submit" class="btn btn-primary" style="width:100%;">Submit Message</button>
-        </form>
+
+          <h5
+            style="
+              font-weight: 700;
+              color: var(--primary-burgundy);
+              margin-bottom: 0.5rem;
+            "
+          >
+            Send an Online Message
+          </h5>
+          <form
+            id="contact-form"
+            onsubmit="
+              event.preventDefault();
+              alert('Thank you! Your message has been sent successfully.');
+              closeModal('contact-modal');
+            "
+          >
+            <div
+              style="
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+                margin-bottom: 1rem;
+              "
+            >
+              <input
+                type="text"
+                placeholder="Your Name"
+                required
+                style="
+                  padding: 0.6rem;
+                  border: 1px solid var(--border-light);
+                  border-radius: 4px;
+                "
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                required
+                style="
+                  padding: 0.6rem;
+                  border: 1px solid var(--border-light);
+                  border-radius: 4px;
+                "
+              />
+            </div>
+            <textarea
+              placeholder="Your Message"
+              required
+              style="
+                padding: 0.6rem;
+                border: 1px solid var(--border-light);
+                border-radius: 4px;
+                width: 100%;
+                height: 100px;
+                margin-bottom: 1rem;
+              "
+            ></textarea>
+            <button type="submit" class="btn btn-primary" style="width: 100%">
+              Submit Message
+            </button>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Ministries Modal -->
-  <div class="modal-overlay" id="ministries-modal">
-    <div class="modal-container">
-      <div class="modal-header">
-        <h3>Parish Ministries</h3>
-        <button class="modal-close-btn" onclick="closeModal('ministries-modal')"><i class="fas fa-times"></i></button>
-      </div>
-      <div class="modal-body" style="max-height: 60vh;">
-        <h4>Active Parish Ministries</h4>
-        <p>Our faith is put into action daily through numerous liturgical, youth, and communal ministries:</p>
-        
-        <h5 style="font-weight:700; color:var(--primary-burgundy); margin-top:1rem;">1. Liturgical Rosters</h5>
-        <p>Get involved as a Reader, Extraordinary Minister of Communion, Altar Server, or Musician at St Joseph's or St Thomas Aquinas' Churches.</p>
-        
-        <h5 style="font-weight:700; color:var(--primary-burgundy); margin-top:1rem;">2. IGNITE &amp; Young Adult Ministry (YAM)</h5>
-        <p>A thriving, warm group welcoming students and young professionals for faith studies, social calendar gatherings, and spiritual reflection.</p>
-        
-        <h5 style="font-weight:700; color:var(--primary-burgundy); margin-top:1rem;">3. Children's Liturgy</h5>
-        <p>Held during the 10:30 AM Sunday Mass at St Joseph's, offering engaging gospel lessons and scriptural activities for elementary school children.</p>
+    <!-- Ministries Modal -->
+    <div class="modal-overlay" id="ministries-modal">
+      <div class="modal-container">
+        <div class="modal-header">
+          <h3>Parish Ministries</h3>
+          <button
+            class="modal-close-btn"
+            onclick="closeModal('ministries-modal')"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body" style="max-height: 60vh">
+          <h4>Active Parish Ministries</h4>
+          <p>
+            Our faith is put into action daily through numerous liturgical,
+            youth, and communal ministries:
+          </p>
+
+          <h5
+            style="
+              font-weight: 700;
+              color: var(--primary-burgundy);
+              margin-top: 1rem;
+            "
+          >
+            1. Liturgical Rosters
+          </h5>
+          <p>
+            Get involved as a Reader, Extraordinary Minister of Communion, Altar
+            Server, or Musician at St Joseph's or St Thomas Aquinas' Churches.
+          </p>
+
+          <h5
+            style="
+              font-weight: 700;
+              color: var(--primary-burgundy);
+              margin-top: 1rem;
+            "
+          >
+            2. IGNITE &amp; Young Adult Ministry (YAM)
+          </h5>
+          <p>
+            A thriving, warm group welcoming students and young professionals
+            for faith studies, social calendar gatherings, and spiritual
+            reflection.
+          </p>
+
+          <h5
+            style="
+              font-weight: 700;
+              color: var(--primary-burgundy);
+              margin-top: 1rem;
+            "
+          >
+            3. Children's Liturgy
+          </h5>
+          <p>
+            Held during the 10:30 AM Sunday Mass at St Joseph's, offering
+            engaging gospel lessons and scriptural activities for elementary
+            school children.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- ==========================================================================
+    <!-- ==========================================================================
        FOOTER SECTION (ST DECLAN'S & SUBIACO INSPIRED)
        ========================================================================== */ -->
-  <footer class="site-footer" id="main-footer">
-    <div class="footer-columns">
-      <!-- Col 1: Churches -->
-      <div class="footer-col" id="footer-churches">
-        <h3>Our Churches</h3>
-        <p><strong>St Joseph's Church</strong><br>30 Fitzgerald Street,<br>South Yarra, VIC 3141</p>
-        <p><strong>St Thomas Aquinas' Church</strong><br>39-45 Bromby Street,<br>South Yarra, VIC 3141</p>
+    <footer class="site-footer" id="main-footer">
+      <div class="footer-columns">
+        <!-- Col 1: Churches -->
+        <div class="footer-col" id="footer-churches">
+          <h3>Our Churches</h3>
+          <p>
+            <strong>St Joseph's Church</strong><br />30 Fitzgerald Street,<br />South
+            Yarra, VIC 3141
+          </p>
+          <p>
+            <strong>St Thomas Aquinas' Church</strong><br />39-45 Bromby
+            Street,<br />South Yarra, VIC 3141
+          </p>
+        </div>
+
+        <!-- Col 2: Services -->
+        <div class="footer-col" id="footer-quicklinks">
+          <h3>Useful Links</h3>
+          <ul class="footer-links-list">
+            <li>
+              <a href="#" onclick="openModal('about-modal')"
+                ><i class="fas fa-chevron-right"></i> About Us</a
+              >
+            </li>
+            <li>
+              <a href="#" onclick="openModal('sacraments-modal')"
+                ><i class="fas fa-chevron-right"></i> Liturgical Mass Times</a
+              >
+            </li>
+            <li>
+              <a href="#" onclick="openModal('bulletins-modal')"
+                ><i class="fas fa-chevron-right"></i> Weekly Bulletin</a
+              >
+            </li>
+            <li>
+              <a href="#" onclick="openModal('safeguarding-modal')"
+                ><i class="fas fa-chevron-right"></i> Safeguarding Documents</a
+              >
+            </li>
+            <li>
+              <a href="#" onclick="openModal('sjos-modal')"
+                ><i class="fas fa-chevron-right"></i> Outreach Services
+                (SJOS)</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Contact details -->
+        <div class="footer-col" id="footer-contact">
+          <h3>Contact Info</h3>
+          <ul class="footer-contact-info">
+            <li>
+              <i class="fas fa-map-marker-alt"></i> P.O. Box 21,<br />South
+              Yarra, VIC 3141
+            </li>
+            <li><i class="fas fa-phone-alt"></i> (03) 9826 9076</li>
+            <li><i class="fas fa-envelope"></i> southyarra@cam.org.au</li>
+            <li><i class="fas fa-clock"></i> Tue - Fri: 9:30 AM - 4:30 PM</li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Archdiocesan link & compliance -->
+        <div class="footer-col" id="footer-compliance">
+          <h3>Compliance &amp; Faith</h3>
+          <p>
+            We are a registered charity with the Australian Charities and
+            Not-for-profits Commission (ACNC).
+          </p>
+          <p>
+            <a
+              href="https://www.sydneycatholic.org/"
+              target="_blank"
+              style="font-weight: 700; color: var(--accent-gold)"
+              ><i class="fas fa-external-link-alt"></i> Catholic Archdiocese of
+              Melbourne</a
+            >
+          </p>
+          <p style="margin-top: 1rem">
+            <a
+              href="#"
+              onclick="openModal('safeguarding-modal')"
+              style="text-decoration: underline; font-weight: 700; color: white"
+              ><i class="fas fa-user-shield"></i> Safeguarding Commitment</a
+            >
+          </p>
+        </div>
       </div>
 
-      <!-- Col 2: Services -->
-      <div class="footer-col" id="footer-quicklinks">
-        <h3>Useful Links</h3>
-        <ul class="footer-links-list">
-          <li><a href="#" onclick="openModal('about-modal')"><i class="fas fa-chevron-right"></i> About Us</a></li>
-          <li><a href="#" onclick="openModal('sacraments-modal')"><i class="fas fa-chevron-right"></i> Liturgical Mass Times</a></li>
-          <li><a href="#" onclick="openModal('bulletins-modal')"><i class="fas fa-chevron-right"></i> Weekly Bulletin</a></li>
-          <li><a href="#" onclick="openModal('safeguarding-modal')"><i class="fas fa-chevron-right"></i> Safeguarding Documents</a></li>
-          <li><a href="#" onclick="openModal('sjos-modal')"><i class="fas fa-chevron-right"></i> Outreach Services (SJOS)</a></li>
-        </ul>
+      <div class="footer-bottom">
+        <div class="footer-ack-box">
+          <p>
+            The Parish of South Yarra acknowledges and respects the original
+            custodians of the land on which our facilities lie - the Wurundjeri
+            (Woi Wurrung) and Boonwurrung (Bunerong) people of the East Kulin
+            nations.
+          </p>
+        </div>
+        <div class="footer-copyright">
+          <p>
+            &copy; 2026 Catholic Parish of South Yarra. All rights reserved.
+          </p>
+          <p style="font-size: 0.7rem; opacity: 0.6; margin-top: 0.25rem">
+            Built inspired by modern Australian Parish designs.
+          </p>
+        </div>
       </div>
+    </footer>
 
-      <!-- Col 3: Contact details -->
-      <div class="footer-col" id="footer-contact">
-        <h3>Contact Info</h3>
-        <ul class="footer-contact-info">
-          <li><i class="fas fa-map-marker-alt"></i> P.O. Box 21,<br>South Yarra, VIC 3141</li>
-          <li><i class="fas fa-phone-alt"></i> (03) 9826 9076</li>
-          <li><i class="fas fa-envelope"></i> southyarra@cam.org.au</li>
-          <li><i class="fas fa-clock"></i> Tue - Fri: 9:30 AM - 4:30 PM</li>
-        </ul>
-      </div>
-
-      <!-- Col 4: Archdiocesan link & compliance -->
-      <div class="footer-col" id="footer-compliance">
-        <h3>Compliance &amp; Faith</h3>
-        <p>We are a registered charity with the Australian Charities and Not-for-profits Commission (ACNC).</p>
-        <p><a href="https://www.sydneycatholic.org/" target="_blank" style="font-weight: 700; color:var(--accent-gold);"><i class="fas fa-external-link-alt"></i> Catholic Archdiocese of Melbourne</a></p>
-        <p style="margin-top: 1rem;"><a href="#" onclick="openModal('safeguarding-modal')" style="text-decoration: underline; font-weight: 700; color: white;"><i class="fas fa-user-shield"></i> Safeguarding Commitment</a></p>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div class="footer-ack-box">
-        <p>The Parish of South Yarra acknowledges and respects the original custodians of the land on which our facilities lie - the Wurundjeri (Woi Wurrung) and Boonwurrung (Bunerong) people of the East Kulin nations.</p>
-      </div>
-      <div class="footer-copyright">
-        <p>&copy; 2026 Catholic Parish of South Yarra. All rights reserved.</p>
-        <p style="font-size:0.7rem; opacity:0.6; margin-top:0.25rem;">Built inspired by modern Australian Parish designs.</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Javascript Logic -->
-  <script src="app.js"></script>
-</body>
+    <!-- Javascript Logic -->
+    <script src="app.js"></script>
+  </body>
 </html>
