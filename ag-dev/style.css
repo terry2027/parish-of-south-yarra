@@ -307,8 +307,8 @@ a:focus-visible, button:focus-visible {
 }
 
 .logo-crest-img {
-  width: 356px;
-  height: 356px;
+  width: 1024px;
+  height: 341px;
   transition: var(--transition-smooth);
 }
 
