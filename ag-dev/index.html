@@ -152,10 +152,9 @@
          SPLIT-HERO SECTION (ST JOSEPH'S SUBIACO INSPIRED)
          ========================================================================== */ -->
       <section class="hero-section" id="hero">
+        <div class="hero-bg-image" id="hero-media-bg"></div>
         <!-- Left: Visual Background & Welcome Tagline -->
-        <!-- div class="hero-media-wrapper" -->
-        <div>
-          <div class="hero-bg-image" id="hero-media-bg"></div>
+        <div class="hero-media-wrapper">
           <div class="hero-text-content">
             <span class="hero-tagline" id="hero-welcome-tag"
               >Welcoming You in Communion & Faith</span
@@ -184,120 +183,118 @@
         </div>
 
         <!-- Right: Glassmorphic Mass Times Card -->
-        <div class="hero-schedule-wrapper">
-          <div class="schedule-card" id="schedule-quick-panel">
-            <div class="schedule-card-header">
-              <h3>Mass Times</h3>
-            </div>
+        <div class="schedule-card" id="schedule-quick-panel">
+          <div class="schedule-card-header">
+            <h3>Mass Times</h3>
+          </div>
 
-            <div class="schedule-card-tabs">
-              <button
-                class="schedule-tab-btn active"
-                onclick="switchScheduleTab('st-joseph')"
-                id="tab-st-joseph"
+          <div class="schedule-card-tabs">
+            <button
+              class="schedule-tab-btn active"
+              onclick="switchScheduleTab('st-joseph')"
+              id="tab-st-joseph"
+            >
+              St Joseph's
+            </button>
+            <button
+              class="schedule-tab-btn"
+              onclick="switchScheduleTab('st-thomas')"
+              id="tab-st-thomas"
+            >
+              St Thomas Aquinas
+            </button>
+            <button
+              class="schedule-tab-btn"
+              onclick="switchScheduleTab('st-korean')"
+              id="tab-st-korean"
+            >
+              Korean Min
+            </button>
+          </div>
+
+          <!-- St Joseph's Schedule -->
+          <div class="schedule-group active" id="schedule-st-joseph">
+            <div class="schedule-item">
+              <div class="schedule-item-title">Saturday Vigil</div>
+              <div class="schedule-item-detail">6:00 PM</div>
+            </div>
+            <div class="schedule-item">
+              <div class="schedule-item-title">Sunday Mass</div>
+              <div class="schedule-item-detail">10:30 AM</div>
+            </div>
+            <div class="schedule-item">
+              <div class="schedule-item-title">Weekday Liturgies</div>
+              <div class="schedule-item-detail">
+                Tuesday &amp; Thursday — 9:00 AM
+              </div>
+            </div>
+            <div class="schedule-card-footer">
+              <address class="schedule-church-address">
+                <i class="fas fa-map-marker-alt"></i> St Joseph's Church, 30
+                Fitzgerald St, South Yarra
+              </address>
+              <a
+                href="https://maps.google.com/?q=St+Joseph+Catholic+Church+South+Yarra"
+                target="_blank"
+                class="schedule-map-link"
+                ><i class="fas fa-directions"></i> View Google Map</a
               >
-                St Joseph's
-              </button>
-              <button
-                class="schedule-tab-btn"
-                onclick="switchScheduleTab('st-thomas')"
-                id="tab-st-thomas"
+            </div>
+          </div>
+
+          <!-- St Thomas Aquinas Schedule -->
+          <div class="schedule-group" id="schedule-st-thomas">
+            <div class="schedule-item">
+              <div class="schedule-item-title">Sunday Mass</div>
+              <div class="schedule-item-detail">9:00 AM</div>
+            </div>
+            <div class="schedule-item">
+              <div class="schedule-item-title">Weekday Liturgies</div>
+              <div class="schedule-item-detail">
+                Wednesday &amp; Friday — 9:00 AM
+              </div>
+            </div>
+            <div class="schedule-card-footer">
+              <address class="schedule-church-address">
+                <i class="fas fa-map-marker-alt"></i> St Thomas Aquinas
+                Church, 39-45 Bromby St, South Yarra
+              </address>
+              <a
+                href="https://maps.google.com/?q=St+Thomas+Aquinas+Church+South+Yarra"
+                target="_blank"
+                class="schedule-map-link"
+                ><i class="fas fa-directions"></i> View Google Map</a
               >
-                St Thomas Aquinas
-              </button>
-              <button
-                class="schedule-tab-btn"
-                onclick="switchScheduleTab('st-korean')"
-                id="tab-st-korean"
+            </div>
+          </div>
+
+          <!-- Korean Ministry Schedule -->
+          <div class="schedule-group" id="schedule-st-korean">
+            <div class="schedule-item">
+              <div class="schedule-item-title">Sunday Mass (Korean)</div>
+              <div class="schedule-item-detail">1:30 PM</div>
+            </div>
+            <div class="schedule-item">
+              <div class="schedule-item-title">Thursday Mass (Korean)</div>
+              <div class="schedule-item-detail">7:30 PM</div>
+            </div>
+            <div class="schedule-item">
+              <div class="schedule-item-title">Monthly Hobart Mass</div>
+              <div class="schedule-item-detail">
+                Scheduled separately (Refer to bulletin)
+              </div>
+            </div>
+            <div class="schedule-card-footer">
+              <address class="schedule-church-address">
+                <i class="fas fa-map-marker-alt"></i> Holy Family Church, 236
+                Stephensons Rd, Mount Waverley
+              </address>
+              <a
+                href="https://maps.google.com/?q=Holy+Family+Church+Mount+Waverley"
+                target="_blank"
+                class="schedule-map-link"
+                ><i class="fas fa-directions"></i> View Google Map</a
               >
-                Korean Min
-              </button>
-            </div>
-
-            <!-- St Joseph's Schedule -->
-            <div class="schedule-group active" id="schedule-st-joseph">
-              <div class="schedule-item">
-                <div class="schedule-item-title">Saturday Vigil</div>
-                <div class="schedule-item-detail">6:00 PM</div>
-              </div>
-              <div class="schedule-item">
-                <div class="schedule-item-title">Sunday Mass</div>
-                <div class="schedule-item-detail">10:30 AM</div>
-              </div>
-              <div class="schedule-item">
-                <div class="schedule-item-title">Weekday Liturgies</div>
-                <div class="schedule-item-detail">
-                  Tuesday &amp; Thursday — 9:00 AM
-                </div>
-              </div>
-              <div class="schedule-card-footer">
-                <address class="schedule-church-address">
-                  <i class="fas fa-map-marker-alt"></i> St Joseph's Church, 30
-                  Fitzgerald St, South Yarra
-                </address>
-                <a
-                  href="https://maps.google.com/?q=St+Joseph+Catholic+Church+South+Yarra"
-                  target="_blank"
-                  class="schedule-map-link"
-                  ><i class="fas fa-directions"></i> View Google Map</a
-                >
-              </div>
-            </div>
-
-            <!-- St Thomas Aquinas Schedule -->
-            <div class="schedule-group" id="schedule-st-thomas">
-              <div class="schedule-item">
-                <div class="schedule-item-title">Sunday Mass</div>
-                <div class="schedule-item-detail">9:00 AM</div>
-              </div>
-              <div class="schedule-item">
-                <div class="schedule-item-title">Weekday Liturgies</div>
-                <div class="schedule-item-detail">
-                  Wednesday &amp; Friday — 9:00 AM
-                </div>
-              </div>
-              <div class="schedule-card-footer">
-                <address class="schedule-church-address">
-                  <i class="fas fa-map-marker-alt"></i> St Thomas Aquinas
-                  Church, 39-45 Bromby St, South Yarra
-                </address>
-                <a
-                  href="https://maps.google.com/?q=St+Thomas+Aquinas+Church+South+Yarra"
-                  target="_blank"
-                  class="schedule-map-link"
-                  ><i class="fas fa-directions"></i> View Google Map</a
-                >
-              </div>
-            </div>
-
-            <!-- Korean Ministry Schedule -->
-            <div class="schedule-group" id="schedule-st-korean">
-              <div class="schedule-item">
-                <div class="schedule-item-title">Sunday Mass (Korean)</div>
-                <div class="schedule-item-detail">1:30 PM</div>
-              </div>
-              <div class="schedule-item">
-                <div class="schedule-item-title">Thursday Mass (Korean)</div>
-                <div class="schedule-item-detail">7:30 PM</div>
-              </div>
-              <div class="schedule-item">
-                <div class="schedule-item-title">Monthly Hobart Mass</div>
-                <div class="schedule-item-detail">
-                  Scheduled separately (Refer to bulletin)
-                </div>
-              </div>
-              <div class="schedule-card-footer">
-                <address class="schedule-church-address">
-                  <i class="fas fa-map-marker-alt"></i> Holy Family Church, 236
-                  Stephensons Rd, Mount Waverley
-                </address>
-                <a
-                  href="https://maps.google.com/?q=Holy+Family+Church+Mount+Waverley"
-                  target="_blank"
-                  class="schedule-map-link"
-                  ><i class="fas fa-directions"></i> View Google Map</a
-                >
-              </div>
             </div>
           </div>
         </div>
@@ -1242,11 +1239,15 @@
           <h3>Contact Info</h3>
           <ul class="footer-contact-info">
             <li>
-              <i class="fas fa-map-marker-alt"></i> P.O. Box 21,<br />South
-              Yarra, VIC 3141
+              <i class="fas fa-map-marker-alt"></i> St. Joseph’s Parish Centre,
+              <br />30 Fitzgerald Street,<br />P.O. Box 21,<br />South Yarra,
+              VIC 3141
             </li>
-            <li><i class="fas fa-phone-alt"></i> (03) 9826 9076</li>
-            <li><i class="fas fa-envelope"></i> southyarra@cam.org.au</li>
+            <li><i class="fas fa-phone-alt"></i> (03) 9826 9677</li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              secretary@parishofsouthyarra.org.au
+            </li>
             <li><i class="fas fa-clock"></i> Tue - Fri: 9:30 AM - 4:30 PM</li>
           </ul>
         </div>

@@ -374,6 +374,7 @@ a:focus-visible, button:focus-visible {
 .hero-media-wrapper {
   position: relative;
   overflow: hidden;
+  z-index: 2; /* Ensure content is above background */
 }
 
 .hero-bg-image {
@@ -382,25 +383,34 @@ a:focus-visible, button:focus-visible {
   left: 0;
   width: 100%;
   height: 100%;
-  /*background-image: url('https://parishofsouthyarra.org.au/wp-content/uploads/2017/01/webslte-banner.png');*/
-  background-image: url('"https://i0.wp.com/parishofsouthyarra.org.au/wp-content/uploads/2017/01/dsc01426.jpg');
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('images/Banner.webp');
   background-size: cover;
   background-position: center;
   transform: scale(1.03);
   transition: var(--transition-smooth);
+  z-index: 0;
 }
 
-/* Elegant dark vignette overlay */
-.hero-media-wrapper::before {
+/* Elegant dark vignette overlay - now on hero-section to cover full width */
+.hero-section::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  /*background: linear-gradient(135deg, rgba(30, 34, 41, 0.85) 0%, rgba(30, 34, 41, 0.4) 60%, rgba(30, 34, 41, 0.7) 100%);*/
-  background: linear-gradient(135deg, rgba(30, 34, 41, 0.05) 0%, rgba(30, 34, 41, 0.05) 60%, rgba(30, 34, 41, 0.05) 100%);
+  background: linear-gradient(
+    90deg, 
+    rgba(0, 0, 0, 0.5) 0%, 
+    rgba(0, 0, 0, 0.2) 50%, 
+    rgba(0, 0, 0, 0.4) 100%
+  );
   z-index: 1;
+  pointer-events: none;
 }
 
 .hero-text-content {
@@ -446,40 +456,21 @@ a:focus-visible, button:focus-visible {
 }
 
 /* Glassmorphic Mass Times Card (Right Side) */
-.hero-schedule-wrapper {
-  background: linear-gradient(180deg, var(--primary-dark) 0%, var(--primary-burgundy) 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 4rem;
-  position: relative;
-}
-
-/* Decorative backdrop lighting */
-.hero-schedule-wrapper::before {
-  content: '';
-  position: absolute;
-  top: -30%;
-  left: -30%;
-  width: 160%;
-  height: 160%;
-  background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, rgba(0,0,0,0) 70%);
-  z-index: 1;
-  pointer-events: none;
-}
-
 .schedule-card {
-  background: rgba(253, 251, 247, 0.08);
-  backdrop-filter: blur(15px);
-  border: 1px solid rgba(253, 251, 247, 0.15);
+  background: rgba(253, 251, 247, 0.05); /* Very slight opacity */
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(253, 251, 247, 0.1);
   border-radius: 8px;
   padding: 2.5rem;
-  width: 100%;
+  width: 90%;
   max-width: 440px;
   color: var(--bg-cream);
   position: relative;
   z-index: 2;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  align-self: center;
+  justify-self: center;
+  margin-right: 2rem;
 }
 
 .schedule-card-header {
